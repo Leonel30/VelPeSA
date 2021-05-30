@@ -311,8 +311,23 @@ body {
 .preMain .contenedor__opaco {
   width: 100%;
   height: 450px;
-  background-color: rgba(41, 41, 34, 0.5);
+  background-color: rgba(41, 41, 34, 0.2);
   position: absolute;
+}
+
+.preMain .contenedor__opaco .contenedor__opaco--titulo {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: auto;
+  top: 45%;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.preMain .contenedor__opaco .contenedor__opaco--titulo #titulo__home {
+  font-weight: 100;
+  font-style: italic;
+  padding: 20px;
 }
 
 @media (max-width: 480px) {
