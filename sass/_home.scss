@@ -1,5 +1,5 @@
 .preMain {
-    height: 450px;
+    height: 700px;
     width: 100%;
     padding-top: 20px;
     overflow: hidden;
@@ -30,13 +30,21 @@
             margin: auto;
             top: 45%;
             background-color: rgba(20, 20, 20, 0.5);
+            @include tablet {
+                top:30%;
+            }
+            @include telefono {
+                top: 20%;
+                margin: 0;
+            }
             #titulo__home{
                 font-weight: 100;
                 font-style: italic;
                 padding: 20px;
-               
+                @include telefono {
+                    font-size: 20px;      
+                }
             }
-
         }
         @include telefono {
             height: 210px;
@@ -49,6 +57,17 @@
         @include telefono {
             min-height: 300px;
         }
+    }
+}
+.titulo__main {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+    font-size: 40px;
+    @include telefono {
+        margin: 10px;
+        margin-bottom: 40px;
     }
 }
 .conteMain{
