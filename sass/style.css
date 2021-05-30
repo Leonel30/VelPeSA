@@ -538,6 +538,10 @@ body {
   text-transform: uppercase;
 }
 
+.nosotros .nosotros__texto .nosotros__texto-p {
+  font-size: 18px;
+}
+
 @media (max-width: 480px) {
   .nosotros .nosotros__texto {
     width: 100%;
