@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/val.png">
+    <title>Valpesa|Servicios</title>
+    <meta name="description" content="comunicate con nosotros">
+    <meta name="Keywords" content="Valpesa,contacto,email, teléfono de contacto,ubicación">
+    <meta name="author" content="Valpesa">
+    <meta name="copyright" content="Propietario del copyright Valpesa" />
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="language" content="Spanish">
+    <meta http-equiv="Content-Language" content="Es">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="doc-type" content="Web Page">
+    <meta name="revisit-after" content="30 Days">
+    <meta name="title" content="Valpesa">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../sass/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/val.png" alt="logoValpesa">
+            <div class="titulo">
+                <h1>ValPeSA <span> Diseño y Construcción</span> </h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nosotros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../Pages/nosotros.html">Historia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Misión</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Visión</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../Pages/servicios.html">Proyecto y Dirección de Obra</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../Pages/servicios.html">Ingeniería</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Construcción</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/proyectos.html">Proyectos Realizados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo"> Contacto </h1>
+    </header>
+        <div class="contenedor__contacto">
+        <div class="contenido">
+            <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <h3> Formulario de contacto</h3>
+                    <div class="contenido__etiqueta">
+                        <label for="empresa">Empresa</label>
+                        <input type="text"name="empresa" placeholder="Empresa"required>
+                    </div> 
+                    <div class="contenido__etiqueta">
+                        <label for="nombre">Nombre</label>
+                        <input type="text"name="nombre" placeholder="Nombre" required> 
+                    </div> 
+                    <div class="contenido__etiqueta">
+                        <label for="apellido">Apellidos</label>
+                        <input type="text"name="apellido" placeholder="Apellidos" required>
+                    </div> 
+                    <div class="contenido__etiqueta">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel"name="telefono"placeholder="Telefono" required> 
+                    </div> 
+                    <div class="contenido__etiqueta">
+                        <label for="email">E-mail</label>
+                        <input type="email"name="email" placeholder="email"required>
+                    </div> 
+                    <div class="contenido__etiqueta">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10"placeholder="escriba aqui su requerimiento"></textarea>
+                    </div>
+                    <div class="contenido__boton">
+                        <label for="enviar"></label>
+                        <input type="submit" value="Enviar">
+                        <label for="enviar"></label>
+                    </div>
+                    
+                    <div class="contenido__lista"> 
+                        <label for="archivo">Adjuntar Archivo</label>
+                        <select name="archivo" id="">
+                            <option value="1">-Seleccione tipo Archivo</option>
+                            <option value="2">Archivo .DWG</option>
+                            <option value="3">Archivo .PDF</option>
+                            <option value="4">Archivo .Parasolid</option>
+                        </select>
+                    </div>
+                    
+                    <h4 >¿Donde nos conocío?</h4>
+                    <div class="contenido__check" >
+                        <div> 
+                            <input type="checkbox" name="internet" value="1"> 
+                            <label for="internet">Internet</label>
+                        </div> 
+                        <div> 
+                            <input type="checkbox" name="rev" value="2"> 
+                            <label for="revi">Revistas o Periodicos</label>
+                        </div>
+                        <div> 
+                            <input type="checkbox" name="reco" value="3"> 
+                            <label for="reco">Recomendaciones</label>
+                        </div>
+                        <div> 
+                            <input type="checkbox" name="publi" value="1">
+                            <label for="publi">Publicidad directa</label>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+        </div>
+        <div class="contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.268064021431!2d-58.85265138459947!3d-34.34365515129142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb6332b2256453%3A0x996212a42343a068!2sOld%20Man%20704%2C%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1622150054338!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h4 class="contenido__add contenido__add--enf"> Llámanos: +54 11 23435680</h4>
+            <h4 class="contenido__add">Email: info@Valpesa.com</h4> 
+            <h4 class="contenido__add">Old Man 704 L138 Loma Verde Escobar. Provincia de  Buenos Aires Argentina</h4>
+
+        </div>
+
+        <footer class="contenido__pie">
+            <div class="contenido__pie--span">
+                <span >Síguenos en: </span> 
+                <div class="contenido__pie--redes">
+                    <ul>
+                        <li><a href="#" class="face"> <img src="/img/facebook.png" alt="icono-face"></a></li>
+                        <li><a href="#" class="inst"><img src="/img/instagram.png" alt="icono-inst"></a></li>
+                        <li><a href="#" class="whatsapp"><img src="/img/whatsapp.png" alt="icono-whatsapp"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contenido__pie--dire">
+            <span class="contenido__pie--span">Old Man 704 L138 Loma Verde Escobar. Provincia de  Buenos Aires Argentina</span>
+            </div>
+            <h6 class="contenido__pie--all">Valpesa Todos los derechos reservados 2021.</h6>
+        </footer> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>

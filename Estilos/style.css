@@ -1,0 +1,572 @@
+
+
+  
+.logo {
+    width: 15%;
+    height: 100px;
+    background-color:rgba(46, 19, 19, 0.05);
+    padding-left: 30px;
+   
+}
+.logo img {
+    width: 100px; /* la idea era que la imagen no tuviese el ancho del contenedor por eso habia usado (100px -100% ) pero no me lo estaba tomando igual */
+    height: 100px;
+}
+@media screen and (max-width:380px) {
+    .logo {
+        width: 20%;
+        display: flex;
+        padding: 0;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/* .preMain {
+    height: 450px;
+    width: 100%;
+    padding-top: 50px;
+
+} */
+
+@media screen and (max-width:768px){
+    .preMain{
+        padding-top: 0;
+        height: 350px;
+    }
+}
+@media screen and (max-width:380px){
+    .preMain {
+        height: 300px;
+        padding-top: 0%;
+        margin-bottom: 15px;
+    }      
+}
+/* .preMain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+} */
+.navBar {
+    width: 50%;;
+    background-color:rgb(12, 11, 11, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+@media screen and (max-width:768px){
+    .navBar{
+        width: 60%;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:380px) {
+    .navBar {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: right;
+    }
+}
+.navLetras a {
+    color: #ffff;
+    font-size: 20px;
+}
+.dropdown-menu a {
+    color:rgb(68, 67, 67);
+}
+.dropdown-item {
+    font-size: 15px;
+}
+
+.leSu{
+    font-size: 15px; 
+}
+
+
+
+.menu {
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+
+}
+@media screen and (max-width:380px){
+    .menu li {
+        display: block;
+    }
+}
+.menu .subMenu {
+    position: absolute;
+}
+@media screen and (max-width:380px) {
+    .menu .subMenu {
+        position: relative;
+    }
+}
+.subMenu li {
+    display: block;
+    display: none;
+    margin: 5px;
+}
+.subMenu li a {
+    font-size: 15px;
+}
+@media screen and (max-width:380px) {
+    .subMenu li a {
+        padding-left: 40px;
+    }
+}
+
+.menu li:hover .subMenu li  {
+    display: block;
+    background-color:gray;
+    border-radius: 10px;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px;
+}
+
+@media screen and (max-width:768px) {
+    .menu a {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .menu a {
+        padding: 10px;
+    }
+}
+.menu li:hover {
+   background-color: gray;
+   border-radius: 10px;
+}
+ /* fin del pre-main */
+
+/* .conteMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px ;
+    margin: 40px;
+} */
+
+/*
+@media screen and (max-width:768px) {
+    .conteMain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:380px) {
+    .conteMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        justify-content: center;
+        margin: 15px;
+    }
+}
+*/
+/* .conteServi {
+    width: 100%;
+    height: auto;
+    background-color:rgb(93, 93, 93,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: transform 0.4s;
+}
+.conteServi:hover {
+    transform: scale(1.05,1.11);
+  
+} */
+
+/* .conteServi h2 {
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 15px;
+} */
+
+/* .conteMain img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    
+} */
+
+
+/* .conteServi p {
+    font-weight: 200;
+    text-align: justify;
+    width: 80%;
+    padding: 10px;
+} */
+
+/* .tabla {
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content:left;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding: 10px;
+}
+.tabla #tabla1 {
+    background-color: rgb(65, 62, 62);
+    
+}
+.tabla #tabla1 li {
+    list-style: none;
+} */
+.tabGrid {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    border: 0.5px solid white;
+    background-color: rgb(93, 93, 93,0.5);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:380px){
+    .tabGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+    }
+}
+.texGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: 1px solid white;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (max-width:380px) {
+    .texGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+.texGrid h4 {
+    width: 100%;
+    border: 1px solid white;
+    margin: 0;
+    text-align:center ;
+   
+}
+@media screen and (max-width:380px){
+    .texGrid h4 {
+        grid-row: 1 / 4 ;
+        padding-top: 50%;
+    }
+}
+.texGrid p {
+    border: 1px solid white;
+    text-align: center;
+    line-height: 100%;
+}
+footer {
+    background-color: rgb(65, 62, 62);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer span#red {
+    width: 50%;
+    font-size: 20px;
+    padding-left: 30px;
+}
+footer span#direct {
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    font-size: 20px;
+}
+footer h6 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+@media screen and (max-width:380px) {
+    footer span#red {
+        font-size: 16px;
+    }
+    footer span#direct {
+        font-size: 16px;
+    }
+    footer h6 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+} 
+
+/*finde  de index - Inicio de nosotros */
+
+section {
+    padding-top: 30px;
+}
+.nosotros {
+  width: 100%;
+  height: 450px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.nosotros .nosoTex{
+    width: 50%;
+    padding:  50px;
+    
+}
+.nosotros .nosoImg {
+  width: 50%;
+  height: 350px;
+}
+#titu2 , #titu3  {
+    text-transform: uppercase;
+}
+.nosoImg img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0 50px;
+}
+#servicios {
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+
+/* Fin de Nosotros- Inicio de Proyectos */
+.servIndu {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.servIndu .servImg {
+    height:300px;
+}
+    
+.servIndu .serImg img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 30px;
+    transition: transform 0.1s;
+    
+
+}
+.servIndu .serImg img:hover {
+    transform: scale(1.2,1.5);
+   
+}
+.serImg {
+    overflow: hidden;
+}
+.obrasInd {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.obrasInd img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 30px;
+    transition: transform 1s;
+}
+.obrasInd img:hover {
+    transform: scale(1.2,1.5);
+}
+.obrasInt {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.obrasInt img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding:30px;
+    margin-bottom: 30px;
+    transition: transform 1s;
+}
+.obrasInt img:hover {
+    transform: scale(1.2,1.5);
+}
+#titu2Proy {
+    text-transform: uppercase;
+    margin: 20px;
+}
+#titu1Proy {
+    text-transform: uppercase;
+    animation-duration: 4s;
+    animation-name: apare;
+}
+
+#tituCont {
+    animation-duration: 4s;
+    animation-name: apare;
+}
+@keyframes apare {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+/* Fin de Proyectos- Inicio de Contacto */
+
+.conteConta {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+}
+.conteConta form {
+width: 50%;
+margin-right: 40px;
+background-image: linear-gradient(#727272, #b1b1b1);
+padding-bottom: 30px;
+border-style: none;
+border-radius: 20px;
+
+}
+
+.conteConta h3 {
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+.contaInfo label {
+    display: block;
+    font-weight: 550;
+    padding-left: 30px;
+    padding-bottom: 15px;
+
+}
+.contaInfo input {
+    width: 90%;
+    margin: auto;
+   height: 30px;
+   border-radius: 5px;
+   display: block;
+   margin-bottom: 15px;
+   padding-left: 20px;
+}
+.contaInfo textarea {
+    padding-top: 10px;
+    padding-left: 5px;
+    min-width: 90%;
+    max-width: 90%;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.boton {
+    display: flex;
+    justify-content: flex-end;
+
+}
+/* .boton input {
+    background-color: rgb(0, 167, 218);
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 15px;
+    border-style: 2px solid white;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.boton input:hover {
+    cursor: pointer;
+    color:  rgb(0, 167, 218);
+    font-weight: 800;
+    background-color: white;
+} */
+
+.listaDes {
+    padding-left: 40px;
+}
+.listaDes label {
+    font-weight: 700;
+}
+
+fieldset {
+    border-style: none;
+    padding-right: 30px;
+}
+#tiDon {
+    color: black;
+    padding-left: 20px;
+}
+.checkBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.checkBox input {
+    width: 3%;
+    margin-left: 50px;
+}
+.checkBox label {
+    width: 80%;
+    padding-left: 0px;
+
+}
+#titu1Proy {
+  
+  padding-top: 20px;
+  text-align: center;
+}
+#titu2Proy {
+    padding-left: 50px;
+}

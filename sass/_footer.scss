@@ -1,0 +1,48 @@
+.contenido__pie{
+    width: 100%;
+    color: $ColorPrim;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    position:static;
+    .contenido__pie--span{
+        height: 100px;
+        width: 50%;
+        font-size: 18px;
+        span{
+            padding: 20px;
+        }
+        .contenido__pie--redes{ 
+            height: 100px;
+            
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+                justify-content:flex-start;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin: 10px 5px;
+                }
+            } 
+        } 
+    }
+    .contenido__pie--dire{
+        width: 50%;
+        height: 100px;
+    }
+    .contenido__pie--all{
+        height: 20px;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15px;
+        @include telefono {
+            margin-top: 20px;
+            font-size: 12px;
+        }   
+    }
+}

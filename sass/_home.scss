@@ -1,0 +1,117 @@
+.preMain {
+    height: 450px;
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+    @include tablet {
+        padding-top: 10px;
+        height: 350px;
+    }
+    @include telefono {
+        height: 300px;
+        padding-top: 0%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .contenedor__opaco {
+        width: 100%;
+        height: 450px;
+        background-color:rgba(41, 41, 34, 0.5);
+        position: absolute;
+        @include telefono {
+            height: 210px;
+            top: 15%;
+        }
+    }
+    video {
+        width: 100%;
+        display: block;
+        @include telefono {
+            min-height: 300px;
+        }
+    }
+}
+.conteMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px ;
+    margin: 40px;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    @include telefono {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        justify-content: center;
+        margin: 15px;
+    }
+   
+    img{
+        width: 80%;
+        height: 200px;
+        object-fit:cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+}
+.conteServi {
+    width: 100%;
+    height: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.4s;
+    &:hover{
+        transform:scale(1.05,1.11);
+    }
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+    p{
+        font-weight: 200;
+        text-align: justify;
+        width: 80%;
+        padding: 10px;
+    }
+    .boton{
+        display: flex;
+        justify-content: flex-end;
+        input {
+            background-color: rgb(0, 167, 218);
+            height: 40px;
+            width: 120px;
+            border-radius: 10px;
+            font-size: 15px;
+            border-style: 2px solid white;
+            text-transform: uppercase;
+            margin-top: 10px;
+            &:hover{
+                cursor: pointer;
+                color:  rgb(0, 167, 218);
+                font-weight: 800;
+                background-color: white;
+            }
+
+        }
+        
+    }
+}

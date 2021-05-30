@@ -1,0 +1,30 @@
+.bg-dark {
+    background-color: #000 !important;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    
+    img {
+        width: 100px;
+    }
+    .titulo {
+        margin-left: 50px;
+        h1 {
+            font-size: $title-size;
+        }
+        span {
+            font-size: 15px;
+            @include telefono {
+                display: block;
+                font-size: 15px;
+            }
+        }
+    }
+}
+.navbar-collapse {
+    flex-grow: 0.2;
+}
+.nav-link {
+        font-size: 20px;
+}
