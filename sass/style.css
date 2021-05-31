@@ -310,9 +310,15 @@ body {
 
 .preMain .contenedor__opaco {
   width: 100%;
-  height: 450px;
+  height: 700px;
   background-color: rgba(41, 41, 34, 0.2);
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .preMain .contenedor__opaco {
+    height: 400px;
+  }
 }
 
 .preMain .contenedor__opaco .contenedor__opaco--titulo {
@@ -379,6 +385,7 @@ body {
   .titulo__main {
     margin: 10px;
     margin-bottom: 40px;
+    font-size: 30px;
   }
 }
 
