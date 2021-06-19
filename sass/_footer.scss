@@ -12,9 +12,17 @@
         font-size: 18px;
         span{
             padding: 20px;
+            margin-left: 3rem;
+            @include telefono {
+                margin-left: 0;
+        }
         }
         .contenido__pie--redes{ 
             height: 100px;
+            margin-left: 3rem;
+            @include telefono{
+                margin-left: 0;
+            }
             
             ul{
                 margin: 0;
